@@ -14,7 +14,8 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  description = "myblog"
+  description = "SSH Key Name"
+  default = "myblog"
 }
 
 variable "nginx_config_url" {
