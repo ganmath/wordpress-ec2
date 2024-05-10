@@ -20,22 +20,22 @@ variable "key_name" {
 
 variable "nginx_config_url" {
   description = "URL to the Nginx config file"
-  default     = "https://raw.githubusercontent.com/your-repo/nginx.conf"
+  default     = "https://raw.githubusercontent.com/ganmath/wordpress-ec2/main/nginx.conf"
 }
 
 variable "docker_compose_url" {
   description = "URL to the Docker Compose file"
-  default     = "https://raw.githubusercontent.com/your-repo/docker-compose.yml"
+  default     = "https://raw.githubusercontent.com/ganmath/wordpress-ec2/main/docker-compose.yml"
 }
 
 variable "backup_script_url" {
   description = "URL to the backup script"
-  default     = "https://raw.githubusercontent.com/your-repo/backup_wordpress.sh"
+  default     = "https://raw.githubusercontent.com/ganmath/wordpress-ec2/main/backup_wordpress.sh"
 }
 
 variable "restore_script_url" {
   description = "URL to the restore script"
-  default     = "https://raw.githubusercontent.com/your-repo/restore_wordpress.sh"
+  default     = "https://raw.githubusercontent.com/ganmath/wordpress-ec2/main/restore_wordpress.sh"
 }
 
 variable "s3_bucket_name" {
