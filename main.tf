@@ -63,17 +63,3 @@ resource "aws_security_group" "wordpress_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-resource "aws_s3_bucket" "wordpress_backup" {
-  bucket = var.s3_bucket_name
-  acl    = "private"
-
-  versioning {
-    enabled = true
-  }
-
-  tags = {
-    Name        = "WordPress Backup Bucket"
-    Environment = "Production"
-  }
-}

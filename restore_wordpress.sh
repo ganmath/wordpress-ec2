@@ -4,7 +4,7 @@
 # Set Variables
 DB_CONTAINER_NAME="wordpress_db_1"
 WP_VOLUME_PATH="/var/wp-site"
-S3_BUCKET="my-wordpress-backup-bucket"
+S3_BUCKET="my-wordpress-backup-bucket-11-05"
 
 # Download Latest Backup
 aws s3 cp s3://$S3_BUCKET/latest_backup.tar.gz /tmp/latest_backup.tar.gz

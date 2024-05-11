@@ -40,5 +40,5 @@ variable "restore_script_url" {
 
 variable "s3_bucket_name" {
   description = "S3 bucket name for WordPress backups"
-  default     = "my-wordpress-backup-bucket"
+  default     = "my-wordpress-backup-bucket-11-05"
 }

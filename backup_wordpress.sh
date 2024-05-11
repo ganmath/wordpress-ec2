@@ -4,7 +4,7 @@
 # Set Variables
 DB_CONTAINER_NAME="wordpress_db_1"
 WP_VOLUME_PATH="/var/wp-site"
-S3_BUCKET="my-wordpress-backup-bucket"
+S3_BUCKET="my-wordpress-backup-bucket-11-05"
 
 # Backup the WordPress Database
 docker exec $DB_CONTAINER_NAME mysqldump -u wordpress -p'wordpress' wordpress > $WP_VOLUME_PATH/backup.sql
